@@ -32,10 +32,13 @@ module.exports = (robot) ->
         res.send "Failed to check, sorry:bow:"
         throw err
       else
-        inventory = ""
-        rows.forEach (row) ->
-          inventory += "#{row.id} #{row.name} #{row.expiration_date}\n"
-        res.send "#{inventory.substr(0, inventory.length-1)}"
+        if rows.length == 0
+          res.send "Nothing is found in our refrigerator..."
+        else
+          inventory = ""
+          rows.forEach (row) ->
+            inventory += "#{row.id}, #{row.name}, #{row.expiration_date}\n"
+          res.send "#{inventory.substr(0, inventory.length-1)}"
 
   robot.hear /^とうろく.*/i, (res) ->
     if query = /^とうろく\s+(.*)\s+([0-9]{8})$/i.exec res.match[0]
