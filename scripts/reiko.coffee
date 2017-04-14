@@ -35,7 +35,7 @@ module.exports = (robot) ->
         if rows.length == 0
           res.send "Nothing is found in our refrigerator..."
         else
-          inventory = "[id], [food_name], [expiration_date]"
+          inventory = "[id], [food_name], [expiration_date]\n"
           rows.forEach (row) ->
             inventory += "#{row.id}, #{row.name}, #{row.expiration_date}\n"
           res.send "#{inventory.substr(0, inventory.length-1)}"
