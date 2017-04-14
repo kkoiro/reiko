@@ -32,16 +32,18 @@ in bin/hubot.
 4. Change the database name
 
 Change the database name of databases/example.sqlite3.
-
+```
   $ mv example.sqlite3 main.sqlite3
+```
 
 
 ### Usage
 
 At first, showing how to run 'reiko'.
 You can easily run reiko to execute the command below:
-
+```
   $ bin/hubot -a slack
+```
 
 Next, explainig the commands.
 If you type a command in the channel reiko attends, she reply some information following the command.
