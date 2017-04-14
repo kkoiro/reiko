@@ -1,4 +1,4 @@
-reiko
+Reiko
 =======
 
 **reiko** helps us to manage foods in our refrigerator.
@@ -47,10 +47,17 @@ Next, explainig the commands.
 If you type a command in the channel reiko attends, she reply some information following the command.
 
 - へるぷ
+
   You can see what kind of commands reiko has.
+  
 - りすと
+
   Reiko check our refrigerator's inventory.
+  
 - とうろく food_name date[YYYYMMDD]
+
   Reiko register what you bought and its expiration date.
+  
 - さくじょ id
+
   You can delete registered record if you finish up foods.
