@@ -44,6 +44,10 @@ You can easily run reiko to execute the command below:
 ```
   $ bin/hubot -a slack
 ```
+To execute reiko as a service:
+```
+  $ nohup bin/hubot -a slack &
+```
 
 Next, explainig the commands.
 If you type a command in the channel reiko attends, she reply some information following the command.
